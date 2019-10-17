@@ -28,6 +28,17 @@ the external network accessing the game intranet without barriers.
 >The input format of the NETWORK_ID/MASK:  
 >       NETWORK_ID is 192.168.1.0 and MASK is 255.255.255.0 if the game's running under 192.168.1.*
 
+example:
+```bash
+export HOST=120.123.324.543 # some public ip
+export PORT=1234
+export NETWORK_ID=192.168.1.0
+export MASK=255.255.255.0
+make init
+make start
+make gen_config
+```
+
 ### Configure On-site Router
 
 >a raspi, maybe?
